@@ -1,3 +1,0 @@
-flex lexer.l
-g++ lex.yy.c parser.cpp main.cpp -lfl -o final
-./final
