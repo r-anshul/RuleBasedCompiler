@@ -1,0 +1,1 @@
+IF speed > 80 THEN alert

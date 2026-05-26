@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.min.js"></script>
+<title>Rule Based Compiler</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Rule Based Decision Engine</h2>
+
+<textarea
+    id="ruleInput"
+    oninput="generateVariableInputs()" placeholder="Enter rule here"></textarea>
+
+<br><br>
+
+<h3>Runtime Variables</h3>
+
+<div id="variableInputs"></div>
+
+<br><br>
+
+<button onclick="runRule()">
+    Run Compiler
+</button>
+
+<div class="box">
+    <h3>Tokens</h3>
+    <pre id="tokens"></pre>
+</div>
+
+<div class="box">
+    <h3>Three Address Code</h3>
+    <pre id="tac"></pre>
+</div>
+
+<div class="box">
+    <h3>Evaluation Result</h3>
+    <pre id="result"></pre>
+</div>
+
+<div class="box">
+    <h3>AST</h3>
+    <div id="astTree"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

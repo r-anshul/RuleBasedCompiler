@@ -1,0 +1,3 @@
+flex lexer.l
+
+g++ lex.yy.c parser.cpp tac.cpp ast_export.cpp evaluator.cpp main.cpp -o final

@@ -1,0 +1,2 @@
+t1 = speed > 80
+alert = t1
